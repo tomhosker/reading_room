@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    profilebox.manor
+        h2 #{title}
+        figure.pbox
+            img.pbox(src="../../images/"+arms)
+        table.pbox
+            tr
+                td Master
+                td !{masterLink}
+            if baronyLink
+                tr
+                    td Barony
+                    td !{baronyLink}
+
+    h1 #{title}
+
+    if description
+        p !{description}
+    else
+        p The #[b #{title}] is a manor of the #[a(href="/territories/kingdom") Kingdom of Cyprus].

@@ -1,0 +1,38 @@
+extends layout
+
+block content
+    profilebox.county
+        h2 #{title}
+        figure.pbox
+            img.pbox(src="../../images/"+arms)
+        table.pbox
+            tr
+                td Earl
+                td !{earlLink}
+            tr
+                td Lord-Lieutenant
+                td !{lordLieutenantLink}
+            if duchyLink
+                tr
+                    td Duchy
+                    td !{duchyLink}
+
+    h1 #{title}
+
+    if description
+        p !{description}
+    else
+        p The #[b #{title}] is a county of the #[a(href="/territories/kingdom") Kingdom of Cyprus].
+
+    h2 Baronies
+    if baronies.length == 0
+        p #[i None as yet.]
+    else
+        table.mini
+            tr
+                th Barony
+                th Baron
+            for barony in baronies
+                tr
+                    td !{barony.baronyLink}
+                    td !{barony.baronLink}

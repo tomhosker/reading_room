@@ -1,13 +1,14 @@
 {
-    "name": "vanilla_web",
-    "version": "1.1.1",
+    "name": "reading_room",
+    "version": "0.0.1",
     "private": false,
     "scripts": {
         "devstart": "nodemon ./bin/www",
-        "preinstall_local": "sh install_3rd_party",
+        "preinstall_local": "sh sh/install_3rd_party.sh",
         "prettier": "npx prettier --write .",
         "start": "node ./bin/www",
-        "test": "nyc mocha"
+        "test": "nyc mocha",
+        "reset_database_cyprus": "sh sh/reset_database_cyprus.sh"
     },
     "dependencies": {
         "@hebcal/core": "^3.50.3",
@@ -24,7 +25,8 @@
         "morgan": "~1.9.1",
         "nyc": "^15.1.0",
         "prettier": "^2.7.1",
-        "pug": "^3.0.1"
+        "pug": "^3.0.1",
+        "sqlite3": "^5.1.6"
     },
     "devDependencies": {
         "nodemon": "^2.0.15"

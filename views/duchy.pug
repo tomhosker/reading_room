@@ -1,0 +1,34 @@
+extends layout
+
+block content
+    profilebox.duchy
+        h2 #{title}
+        figure.pbox
+            img.pbox(src="../../images/"+arms)
+        table.pbox
+            tr
+                td Duke
+                td !{dukeLink}
+            tr
+                td Lord-Warden
+                td !{lordWardenLink}
+
+    h1 #{title}
+
+    if description
+        p !{description}
+    else
+        p The #[b #{title}] is a duchy of the #[a(href="/territories/kingdom") Kingdom of Cyprus].
+
+    h2 Counties
+    if counties.length == 0
+        p #[i None as yet.]
+    else
+        table.mini
+            tr
+                th County
+                th Earl
+            for county in counties
+                tr
+                    td !{county.countyLink}
+                    td !{county.earlLink}

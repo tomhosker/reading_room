@@ -23,6 +23,41 @@
     src: url("fonts/fraktur.ttf");
 }
 
+a:link {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: blue;
+}
+
+a.red:link {
+    color: red;
+}
+
+a.red:hover {
+    text-decoration: underline;
+}
+
+a.red:visited {
+    color: red;
+}
+
+bbox {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 1em;
+    width: 100%;
+    float: left;
+}
+
 body {
     font-family: computerModern, serif;
     padding-left: 20px;
@@ -38,49 +73,126 @@ div.header {
     background-position: center;
 }
 
-a:link {
-    text-decoration: none;
-    color: blue;
+div.content {
+    margin: 1em;
 }
 
-a:hover {
-    text-decoration: underline;
-    color: blue;
+div.footer {
+    padding-top: 5px;
+    padding-left: 1px;
+    font-size: small;
 }
 
-a:visited {
-    text-decoration: none;
-    color: blue;
+div.my-big {
+    font-size: large;
 }
 
-bbox {
-    display: block;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 1em;
-    width: 100%;
-    float: left;
-}
-
-div.helpbox {
-    float: right;
-    width: 400px;
-    border: 2px solid orange;
-    margin: 20px auto 15px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 10px;
+div.my-small {
+    font-size: small;
 }
 
 form {
     padding-left: 30px;
 }
 
+img {
+    margin: 1em;
+}
+
 img.index {
     float: right;
-    padding-left: 20px;
-    width: 40%;
+    width: 45%;
+}
+
+img.pbox {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+figure.pbox {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+figure.kingdom-box {
+    margin-top: 0em;
+}
+
+profilebox {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+    margin-right: 0em;
+    width: 400px;
+    float: right;
+    text-align: center;
+    padding: 1em;
+    border-color: gray;
+    border-style: solid;
+    border-width: 0px 0px 0px 5px;
+}
+
+profilebox.kingdom {
+    width: 470px;
+    border-width: 0 0 0 100px;
+    border-image-slice: 0 0 0 600;
+    border-image-repeat: round;
+    border-image-source: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgd2lkdGg9IjYwMCIKICAgaGVpZ2h0PSI2MDAiCiAgIHZpZXdCb3g9IjAgMCAxNSAxNSIKICAgdmVyc2lvbj0iMS4xIgogICBpZD0ic3ZnNiIKICAgc29kaXBvZGk6ZG9jbmFtZT0iZmxhZy5zdmciCiAgIGlua3NjYXBlOnZlcnNpb249IjAuOTIuMyAoMjQwNTU0NiwgMjAxOC0wMy0xMSkiPgogIDxtZXRhZGF0YQogICAgIGlkPSJtZXRhZGF0YTEyIj4KICAgIDxyZGY6UkRGPgogICAgICA8Y2M6V29yawogICAgICAgICByZGY6YWJvdXQ9IiI+CiAgICAgICAgPGRjOmZvcm1hdD5pbWFnZS9zdmcreG1sPC9kYzpmb3JtYXQ+CiAgICAgICAgPGRjOnR5cGUKICAgICAgICAgICByZGY6cmVzb3VyY2U9Imh0dHA6Ly9wdXJsLm9yZy9kYy9kY21pdHlwZS9TdGlsbEltYWdlIiAvPgogICAgICA8L2NjOldvcms+CiAgICA8L3JkZjpSREY+CiAgPC9tZXRhZGF0YT4KICA8ZGVmcwogICAgIGlkPSJkZWZzMTAiIC8+CiAgPHNvZGlwb2RpOm5hbWVkdmlldwogICAgIHBhZ2Vjb2xvcj0iI2ZmZmZmZiIKICAgICBib3JkZXJjb2xvcj0iIzY2NjY2NiIKICAgICBib3JkZXJvcGFjaXR5PSIxIgogICAgIG9iamVjdHRvbGVyYW5jZT0iMTAiCiAgICAgZ3JpZHRvbGVyYW5jZT0iMTAiCiAgICAgZ3VpZGV0b2xlcmFuY2U9IjEwIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwIgogICAgIGlua3NjYXBlOnBhZ2VzaGFkb3c9IjIiCiAgICAgaW5rc2NhcGU6d2luZG93LXdpZHRoPSIxMzY2IgogICAgIGlua3NjYXBlOndpbmRvdy1oZWlnaHQ9IjcxMyIKICAgICBpZD0ibmFtZWR2aWV3OCIKICAgICBzaG93Z3JpZD0iZmFsc2UiCiAgICAgaW5rc2NhcGU6em9vbT0iMC44NzI3MDgzMyIKICAgICBpbmtzY2FwZTpjeD0iMTgyLjkyNTc5IgogICAgIGlua3NjYXBlOmN5PSIzMDAiCiAgICAgaW5rc2NhcGU6d2luZG93LXg9IjAiCiAgICAgaW5rc2NhcGU6d2luZG93LXk9IjI3IgogICAgIGlua3NjYXBlOndpbmRvdy1tYXhpbWl6ZWQ9IjEiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ic3ZnNiIgLz4KICA8cmVjdAogICAgIHN0cm9rZT0iIzAwMCIKICAgICBzdHJva2Utd2lkdGg9Ii4wNiIKICAgICBmaWxsPSIjRkZGIgogICAgIHdpZHRoPSIxNSIKICAgICBoZWlnaHQ9IjE1IgogICAgIGlkPSJyZWN0MiIgLz4KICA8cGF0aAogICAgIHN0cm9rZT0iIzAwRiIKICAgICBkPSJNMSwyLjVoM00yLjUsMXYzTTExLDIuNWgzTTEyLjUsMXYzTTYsNy41aDNNNy41LDZ2M00xLDEyLjVoM00yLjUsMTF2M00xMSwxMi41aDNNMTIuNSwxMXYzIgogICAgIGlkPSJwYXRoNCIKICAgICBzdHlsZT0ic3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KPC9zdmc+Cg==");
+}
+
+profilebox.duchy {
+    border-color: black;
+    border-width: 0px 0px 0px 25px;
+}
+
+profilebox.county {
+    border-color: black;
+    border-width: 0px 0px 0px 20px;
+}
+
+profilebox.barony {
+    border-color: black;
+    border-width: 0px 0px 0px 15px;
+}
+
+profilebox.manor {
+    border-color: black;
+    border-width: 0px 0px 0px 5px;
+}
+
+profilebox.red {
+    border-color: red;
+    border-width: 0px 0px 0px 20px;
+}
+
+profilebox.noble {
+    border-color: blue;
+    border-width: 0px 0px 0px 20px;
+}
+
+profilebox.important {
+    border-color: blue;
+    border-width: 0px 0px 0px 5px;
+}
+
+profilebox.cross {
+    border-color: red;
+    border-width: 0px 0px 0px 20px;
+}
+
+profilebox.chivalric {
+    border-color: black;
+    border-width: 0px 0px 0px 5px;
+}
+
+span.big-and-strong {
+    font-size: 170%;
+    font-weight: bold;
 }
 
 span.frak {
@@ -89,6 +201,22 @@ span.frak {
 
 table {
     border-collapse: collapse;
+    width: 600px;
+}
+
+table.mini {
+    width: 400px;
+}
+
+table.midi {
+    width: 1000px;
+}
+
+table.maxi {
+    width: 100%;
+}
+
+table.pbox {
     width: 100%;
 }
 
@@ -101,8 +229,4 @@ th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
-}
-textarea {
-    width: 500px;
-    height: 100px;
 }

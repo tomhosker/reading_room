@@ -1,0 +1,38 @@
+extends layout
+
+block content
+    profilebox.barony
+        h2 #{title}
+        figure.pbox
+            img.pbox(src="../../images/"+arms)
+        table.pbox
+            tr
+                td Baron
+                td !{baronLink}
+            tr
+                td Knight-Lieutenant
+                td !{knightLieutenantLink}
+            if countyLink
+                tr
+                    td County
+                    td !{countyLink}
+
+    h1 #{title}
+
+    if description
+        p !{description}
+    else
+        p The #[b #{title}] is a barony of the #[a(href="/territories/kingdom") Kingdom of Cyprus].
+
+    h2 Manors
+    if manors.length == 0
+        p #[i None as yet.]
+    else
+        table.mini
+            tr
+                th Manor
+                th Master
+            for manor in manors
+                tr
+                    td !{manor.manorLink}
+                    td !{manor.masterLink}

@@ -9,6 +9,7 @@ const dotenv = require("dotenv").config();
 
 // Local imports.
 const indexRouter = require("./routes/index");
+const territoriesRouter = require("./routes/territories");
 
 // Error codes.
 const notFound = 404;
@@ -46,6 +47,7 @@ app.use(favicon(__dirname + "/public/favicon.ico"));
 
 // ROUTES.
 app.use("/", indexRouter);
+app.use("/territories", territoriesRouter);
 
 // Catch 404 and forward to error handler.
 app.use(function (req, res, next) {
