@@ -111,6 +111,15 @@ img.pbox {
     width: 70%;
 }
 
+img.big-arms {
+    margin: 0;
+    width: 100%;
+}
+
+figure.big-arms-container {
+    width: 40%;
+}
+
 figure.pbox {
     display: block;
     margin-left: auto;

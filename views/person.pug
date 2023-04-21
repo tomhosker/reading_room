@@ -1,0 +1,54 @@
+extends layout
+
+block content
+    profilebox(class=boxType)
+        p
+            if style
+                | #[i #{style}]
+                br
+            | #[span.big-and-strong #{shortTitle}]
+        figure.pbox
+            img.pbox(src="/images/"+arms)
+        table.pbox
+            if knownAs
+                tr
+                    td Known as
+                    td #{knownAs}
+            tr
+                td Surname
+                if surname
+                    td #{surname}
+                else
+                    td &mdash;
+            tr
+                td Forename
+                if forename
+                    td #{forename}
+                else
+                    td &mdash;
+            tr
+                td #[a(href="/asis/RankTier") Rank]
+                td #{rankNameGendered}
+            tr
+                td Addressed As
+                td &ldquo;#{addressedAs}&rdquo;
+    h1 #{title}
+    p #[b #{shortTitle}] !{bio}
+
+    h2 Cyprian Data
+    h3 Cyprian Legal Name
+    p #{cyprianLegalName}
+    if accolades
+        h4 Accolades
+        p !{accolades}
+    if arms
+        h3 Arms
+            figure.big-arms-container
+                img.big-arms(src="/images/"+arms)
+
+    h2 Other Data
+    if family
+        h3 Family
+        p !{family}
+    else
+        p #[i None as yet.]

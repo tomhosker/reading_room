@@ -8,8 +8,9 @@ const favicon = require("express-favicon");
 const dotenv = require("dotenv").config();
 
 // Local imports.
-const indexRouter = require("./routes/index");
-const territoriesRouter = require("./routes/territories");
+const indexRouter = require("./routes/index.js");
+const territoriesRouter = require("./routes/territories.js");
+const peopleRouter = require("./routes/people.js")
 
 // Error codes.
 const notFound = 404;
@@ -48,6 +49,7 @@ app.use(favicon(__dirname + "/public/favicon.ico"));
 // ROUTES.
 app.use("/", indexRouter);
 app.use("/territories", territoriesRouter);
+app.use("/people", peopleRouter);
 
 // Catch 404 and forward to error handler.
 app.use(function (req, res, next) {
