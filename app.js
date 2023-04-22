@@ -9,8 +9,10 @@ const dotenv = require("dotenv").config();
 
 // Local imports.
 const indexRouter = require("./routes/index.js");
+const asIsRouter = require("./routes/asis.js");
 const territoriesRouter = require("./routes/territories.js");
-const peopleRouter = require("./routes/people.js")
+const peopleRouter = require("./routes/people.js");
+const chivalricRouter = require("./routes/chivalric.js");
 
 // Error codes.
 const notFound = 404;
@@ -48,8 +50,10 @@ app.use(favicon(__dirname + "/public/favicon.ico"));
 
 // ROUTES.
 app.use("/", indexRouter);
+app.use("/asis", asIsRouter);
 app.use("/territories", territoriesRouter);
 app.use("/people", peopleRouter);
+app.use("/chivalric", chivalricRouter);
 
 // Catch 404 and forward to error handler.
 app.use(function (req, res, next) {

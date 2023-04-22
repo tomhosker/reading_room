@@ -1,5 +1,5 @@
 /*
-Returns the pages for the various territories.
+Returns the pages for the various people.
 */
 
 // Imports.

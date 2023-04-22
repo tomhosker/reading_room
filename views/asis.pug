@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    h1 #{title}
+
+    table.maxi
+        tr
+            for heading in headings
+                th #{heading}
+        for row in rows
+            tr
+                for item in row
+                    if item === null
+                        td #[i null]
+                    else
+                        td #{item}

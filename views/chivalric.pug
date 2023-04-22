@@ -1,0 +1,33 @@
+extends layout
+
+block content
+    profilebox(class=boxType)
+        p
+            if style
+                | #[i #{style}]
+                br
+                | #[span.big-and-strong #{name}]
+            else
+                | #[span.big-and-strong #{name}]
+        if arms
+            figure.pbox
+                img.pbox(src="/images/"+arms)
+        table.pbox
+            tr
+                td Master
+                if masterLink
+                    td !{masterLink}
+                else
+                    td #[i None]
+
+    h1 #{title}
+
+    p !{description}
+
+    h2 Accolades
+    for accolade in accolades
+        h3 #{accolade.name}
+        if accolade.holders.length == 0
+            p #[i Not awarded]
+        else
+            p !{accolade.holders.join(" &diam; ")}
