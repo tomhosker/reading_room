@@ -1,0 +1,25 @@
+extends layout
+
+block content
+    profilebox.manor
+        h2 #{title}
+        if arms
+            figure.pbox
+                img.pbox(src="/images/"+arms)
+        table.pbox
+            tr
+                td Professor
+                td !{professorLink}
+            if faculty
+                tr
+                    td Faculty
+                    td !{facultyLink}
+
+    h1 #{title}
+
+    if description
+        p !{description}
+    elif faculty
+        p The #[b #{title}] is a constituent department of the !{faculty}.
+    else
+        p The #[b #{title}] is a department of the #[a(href="/academy") Royal Cyprian Academy].

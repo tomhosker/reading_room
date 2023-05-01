@@ -1,0 +1,28 @@
+extends layout
+
+block content
+    profilebox.barony
+        h2 #{title}
+        if arms
+            figure.pbox
+                img.pbox(src="/images/"+arms)
+        table.pbox
+            tr
+                td Pro-Vice-Chancellor
+                td !{proViceChancellorLink}
+            tr
+                td Parent organisation
+                td #[a(href="/academy") Royal Cyprian Academy]
+
+    h1 #{title}
+
+    if description
+        p !{description}
+    else
+        p The #[b #{title}] is a constituent faculty of the #[a(href="/academy") Royal Cyprian Academy].
+
+    if departments
+        h2 Departments
+        ul
+            for department in departments
+                li !{department}

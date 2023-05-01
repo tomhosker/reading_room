@@ -1,0 +1,28 @@
+extends layout
+
+block content
+    profilebox.county
+        h2 #{title}
+        figure.pbox
+            img.pbox(src="/images/arms_academy.svg")
+        table.pbox
+            tr
+                td Chancellor
+                td !{chancellorLink}
+            tr
+                td Vice-Chancellor
+                td !{viceChancellor}
+
+    h1 #{title}
+
+    p The #[b Royal Cyprian Academy] is the Kingdom's national academy. Its dual purpose is:
+    ul
+        li To preserve, defend and advance the Christian faith, as it was transmitted to the apostles and passed down to their successors;
+        li To collect outstanding cultural achievements of various kinds, especially those belonging to the English-speaking peoples, and to ensure that the general public has as free and untroubled access to such works as possible.
+
+    if faculties
+        h2 Faculties
+        p In order to better achieve the above aims, the Academy is divided into these faculties:
+        ul
+            for faculty in faculties
+                li !{faculty}

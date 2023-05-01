@@ -13,6 +13,7 @@ const asIsRouter = require("./routes/asis.js");
 const territoriesRouter = require("./routes/territories.js");
 const peopleRouter = require("./routes/people.js");
 const chivalricRouter = require("./routes/chivalric.js");
+const academyRouter = require("./routes/academy.js");
 
 // Error codes.
 const notFound = 404;
@@ -54,6 +55,7 @@ app.use("/asis", asIsRouter);
 app.use("/territories", territoriesRouter);
 app.use("/people", peopleRouter);
 app.use("/chivalric", chivalricRouter);
+app.use("/academy", academyRouter);
 
 // Catch 404 and forward to error handler.
 app.use(function (req, res, next) {
