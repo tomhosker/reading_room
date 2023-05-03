@@ -208,6 +208,14 @@ span.frak {
     font-family: fraktur;
 }
 
+span.green {
+    color: green;
+}
+
+span.red {
+    color: red;
+}
+
 table {
     border-collapse: collapse;
     width: 600px;

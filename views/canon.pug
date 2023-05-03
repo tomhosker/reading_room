@@ -1,0 +1,43 @@
+extends layout
+
+block content
+    profilebox.manor
+        h2 #{title}
+        figure.pbox
+            img.pbox(src="/images/badge_canon_"+key+".svg")
+        table.pbox
+            tr
+                td Department
+                if ["almanack", "catalogue"].includes(key)
+                    td #[a(href="/academy/departments/literature") Literature]
+                else if ["anthems", "albums"].includes(key)
+                    td #[a(href="/academy/departments/music") Music]
+                else if ["cinema", "television"].includes(key)
+                    td #[a(href="/academy/departments/film") Film]
+                else
+                    td BAD KEY
+
+    h1 #{title}
+
+    if key == "almanack"
+        p #[b Hosker's Almanack] provides a canon of the very finest English poetry.
+    else if key == "catalogue"
+        p #[b Hosker's Catalogue] documents the collection of physical books owned by #[a(href="/people/hosker-ii") The Duke of Limassol].
+    else if key == "anthems"
+        p #[b Hosker's Anthems] provides a canon of the finest tracks ever recorded.
+    else if key == "albums"
+        p #[b Hosker's Albums] provides a canon of the finest albums ever recorded.
+    else if key == "cinema"
+        p #[b Hosker's Cinema] provides a canon of the finest feature films ever made.
+    else if key == "television"
+        p #[b Hosker's Cinema] provides a canon of the finest television ever made.
+
+    if data
+        table.midi
+            tr
+                for heading in data.headings
+                    th !{heading}
+            for row in data.rows
+                tr
+                    for item in row
+                        td !{item}
