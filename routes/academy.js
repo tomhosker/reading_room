@@ -16,7 +16,8 @@ const {
     HoskersAnthemsRetriever,
     HoskersAlbumsRetriever,
     HoskersCinemaRetriever,
-    HoskersTelevisionRetriever
+    HoskersTelevisionRetriever,
+    BooksRetriever
 } = require("../lib/retrievers/canon_retriever.js");
 
 // Local constant objects.
@@ -35,6 +36,13 @@ const KEY_TO_RETRIEVER_CLASS = {
 // Get the academy's page.
 router.get("/", function (req, res, next) {
     const retriever = new AcademyRetriever(req, res);
+
+    retriever.startHere();
+});
+
+// Get the page for the list of all the Academy's books.
+router.get("/books", function (req, res, next) {
+    const retriever = new BooksRetriever(req, res);
 
     retriever.startHere();
 });

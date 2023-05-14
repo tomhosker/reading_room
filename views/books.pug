@@ -1,0 +1,24 @@
+extends layout
+
+block content
+    profilebox.manor
+        h2 #{title}
+        figure.pbox
+            img.pbox(src="/images/arms_academy.svg")
+        table.pbox
+            tr
+                td Parent organisation
+                td #[a(href="/academy") Royal Cyprian Academy]
+
+    h1 #{title}
+
+    p There follows a list of all the #[b books] in the various libraries of the Academy.
+
+    table.midi
+        tr
+            for heading in data.headings
+                th !{heading}
+        for row in data.rows
+            tr
+                for item in row
+                    td !{item}
