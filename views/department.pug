@@ -53,8 +53,8 @@ block content
                 tr
                     td=book.id
                     td #[i #{book.title}]
-                    if book.shortTitle
-                        td=book.shortTitle
+                    if book.fullTitle
+                        td=book.fullTitle
                     else
                         td &mdash;
                     if book.yearPublished
@@ -65,4 +65,7 @@ block content
                         td #[span.green &#10004;]
                     else
                         td #[span.red &#10006;]
-                    td=book.notes
+                    if book.notes
+                        td !{book.notes}
+                    else
+                        td &mdash;
