@@ -82,42 +82,6 @@ def disable_oauthlib_https_verification():
     this option enabled in production. """
     os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
 
-def append_to_youtube_playlist(playlist_key, video_key):
-    """ Add a given YouTube video to a given YouTube playlist. """
-    body = {
-        "snippet": {
-            "playlistId": playlist_key,
-            "position": 0,
-            "resourceId": {
-                "kind": "youtube#video",
-                "videoId": video_key
-            }
-        }
-    }
-    youtube = get_authenticated_service_youtube()
-    request = youtube.playlistItems().insert(part="snippet", body=body)
-    response = request.execute()
-    return response
-
-def get_authenticated_service_youtube():
-    """ Return an authenticated connection to the YouTube API. """
-    scopes = [YOUTUBE_API_URL]
-    store = oauth2client.file.Storage(PATH_TO_TEMP_YOUTUBE_API_CREDENTIALS)
-    credentials = store.get()
-    if not credentials or credentials.invalid:
-        flow = \
-            oauth2client.client.flow_from_clientsecrets(
-                PATH_TO_YOUTUBE_API_SECRETS, scopes
-            )
-        credentials = oauth2client.tools.run_flow(flow, store)
-    result = \
-        googleapiclient.discovery.build(
-            YOUTUBE_API_SERVICE_NAME,
-            YOUTUBE_API_VERSION,
-            credentials=credentials
-        )
-    return result
-
 def get_video_keys_in_youtube_playlist(playlist_key):
     """ Get a list of the keys within a given YouTube playlist. """
     body = {
@@ -140,14 +104,54 @@ def get_video_keys_in_youtube_playlist(playlist_key):
         response = youtube.playlistItems().list_next(response, executed)
     return result
 
+def get_authenticated_service_youtube():
+    """ Return an authenticated connection to the YouTube API. """
+    scopes = [YOUTUBE_API_URL]
+    store = oauth2client.file.Storage(PATH_TO_TEMP_YOUTUBE_API_CREDENTIALS)
+    credentials = store.get()
+    if not credentials or credentials.invalid:
+        flow = \
+            oauth2client.client.flow_from_clientsecrets(
+                PATH_TO_YOUTUBE_API_SECRETS, scopes
+            )
+        credentials = oauth2client.tools.run_flow(flow, store)
+    result = \
+        googleapiclient.discovery.build(
+            YOUTUBE_API_SERVICE_NAME,
+            YOUTUBE_API_VERSION,
+            credentials=credentials
+        )
+    return result
+
+def append_to_youtube_playlist(playlist_key, video_key):
+    """ Add a given YouTube video to a given YouTube playlist. """
+    body = {
+        "snippet": {
+            "playlistId": playlist_key,
+            "position": 0,
+            "resourceId": {
+                "kind": "youtube#video",
+                "videoId": video_key
+            }
+        }
+    }
+    youtube = get_authenticated_service_youtube()
+    request = youtube.playlistItems().insert(part="snippet", body=body)
+    response = request.execute()
+    return response
+
 def renew_songs():
     """ Renew the Songs playlist. """
+    if not Path(PATH_TO_YOUTUBE_API_SECRETS).exists():
+        print("No secrets file at path: "+PATH_TO_YOUTUBE_API_SECRETS)
+        return False
     bad_keys = []
     local_songs_key_set = get_local_songs_key_set()
     disable_oauthlib_https_verification()
     youtube_songs_key_set = \
         get_video_keys_in_youtube_playlist(PLAYLIST_KEY_SONGS)
     missing_keys = list(local_songs_key_set-youtube_songs_key_set)
+    print("Adding keys to playlist...")
     for video_key in progressbar(missing_keys):
         try:
             append_to_youtube_playlist(PLAYLIST_KEY_SONGS, video_key)
