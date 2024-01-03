@@ -22,6 +22,10 @@
     font-family: fraktur;
     src: url("fonts/fraktur.ttf");
 }
+@font-face {
+    font-family: oldEnglish;
+    src: url("fonts/EnglishTowne.ttf");
+}
 
 a:link {
     text-decoration: none;
@@ -37,7 +41,7 @@ a:visited {
 }
 
 a.red:link {
-    color: red;
+    color: crimson;
 }
 
 a.red:hover {
@@ -45,7 +49,7 @@ a.red:hover {
 }
 
 a.red:visited {
-    color: red;
+    color: crimson;
 }
 
 bbox {

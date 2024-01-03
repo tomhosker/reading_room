@@ -33,7 +33,7 @@ block content
                 td Addressed As
                 td &ldquo;#{addressedAs}&rdquo;
     h1 #{title}
-    p #[b #{shortTitle}] !{bio}
+    p #[b #{shortTitle}] #{bio}
 
     h2 Cyprian Data
     h3 Cyprian Legal Name
@@ -47,8 +47,8 @@ block content
                 img.big-arms(src="/images/"+arms)
 
     h2 Other Data
-    if family
+    if bloodlinks
         h3 Family
-        p !{family}
-    else
+        p !{bloodlinks}
+    if !bloodlinks
         p #[i None as yet.]
