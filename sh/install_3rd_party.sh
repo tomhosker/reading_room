@@ -17,4 +17,4 @@ sudo apt update --yes
 sudo apt install $APT_PACKAGES --yes
 
 # Install PIP packages.
-pip install -r $PATH_TO_PIP_REQUIREMENTS
+pip install ./python
