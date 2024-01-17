@@ -1,0 +1,14 @@
+"""
+This code defines some functions for use with the Mega command line interface.
+"""
+
+# Standard imports.
+import subprocess
+from getpass import getpass
+
+#############
+# FUNCTIONS #
+#############
+
+def mega_login(username):
+    """ 

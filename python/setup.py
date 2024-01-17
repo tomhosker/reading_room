@@ -6,7 +6,7 @@ This code defines the script required by setuptools.
 from setuptools import setup
 
 # Local constants.
-PACKAGE_NAME = "reading_room_scripts"
+PACKAGE_NAME = "reading_room"
 VERSION = "1.0.0"
 DESCRIPTION = "Python scripts for use within the Reading Room project"
 GIT_URL_STEM = "https://github.com/tomhosker"
@@ -19,6 +19,7 @@ INSTALL_REQUIRES = (
     "google-auth-httplib2==0.0.3",
     "google-auth-oauthlib==0.4.1",
     "oauth2client",
+    "mega_utils",
     "progressbar2"
 )
 INCLUDE_PACKAGE_DATA = True
