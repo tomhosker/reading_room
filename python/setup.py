@@ -7,7 +7,7 @@ from setuptools import setup
 
 # Local constants.
 PACKAGE_NAME = "reading_room"
-VERSION = "1.1.0"
+VERSION = "1.2.0"
 DESCRIPTION = "Python scripts for use within the Reading Room project"
 GIT_URL_STEM = "https://github.com/tomhosker"
 AUTHOR = "Tom Hosker"
@@ -17,7 +17,7 @@ INSTALL_REQUIRES = (
     "google-api-python-client==1.7.2",
     "google-auth==1.8.0",
     "google-auth-httplib2==0.0.3",
-    "google-auth-oauthlib==0.4.1",
+    "hosker_utils",
     "oauth2client",
     "mega_utils",
     "progressbar2"

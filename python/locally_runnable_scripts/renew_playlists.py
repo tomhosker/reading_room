@@ -13,7 +13,6 @@ import sqlite3
 from pathlib import Path
 
 # Non-standard imports.
-import google_auth_oauthlib.flow
 import googleapiclient.discovery
 import googleapiclient.errors
 import oauth2client.client
@@ -84,11 +83,6 @@ def disable_oauthlib_https_verification():
 
 def get_video_keys_in_youtube_playlist(playlist_key):
     """ Get a list of the keys within a given YouTube playlist. """
-    body = {
-        "snippet": {
-            "playlistId": playlist_key
-        }
-    }
     youtube = get_authenticated_service_youtube()
     response = \
         youtube.playlistItems().list(

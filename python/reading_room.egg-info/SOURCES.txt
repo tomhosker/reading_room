@@ -1,0 +1,9 @@
+setup.py
+reading_room.egg-info/PKG-INFO
+reading_room.egg-info/SOURCES.txt
+reading_room.egg-info/dependency_links.txt
+reading_room.egg-info/requires.txt
+reading_room.egg-info/top_level.txt
+source/__init__.py
+source/mega_downloader.py
+source/paths.py
