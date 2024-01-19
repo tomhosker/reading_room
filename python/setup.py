@@ -7,7 +7,7 @@ from setuptools import setup
 
 # Local constants.
 PACKAGE_NAME = "reading_room"
-VERSION = "1.0.0"
+VERSION = "1.1.0"
 DESCRIPTION = "Python scripts for use within the Reading Room project"
 GIT_URL_STEM = "https://github.com/tomhosker"
 AUTHOR = "Tom Hosker"
