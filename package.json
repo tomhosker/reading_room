@@ -1,6 +1,6 @@
 {
     "name": "reading_room",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "private": false,
     "scripts": {
         "devstart": "nodemon ./bin/www",
@@ -11,7 +11,6 @@
         "reset_database_cyprus": "sh sh/reset_database_cyprus.sh"
     },
     "dependencies": {
-        "@hebcal/core": "^3.50.3",
         "body-parser": "^1.19.0",
         "cookie-parser": "~1.4.4",
         "debug": "~2.6.9",
