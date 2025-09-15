@@ -6,7 +6,8 @@ Returns the pages for the various people.
 const express = require("express");
 
 // Local imports.
-const PersonRetriever = require("../lib/retrievers/person_retriever.js");
+const Finaliser = require("../lib/finaliser.js");
+const PersonORM = require("../lib/orm/person_orm.js");
 
 // Constants.
 const router = express.Router();
@@ -15,9 +16,13 @@ const router = express.Router();
 // Get a person's page.
 router.get("/:id", function (req, res, next) {
     const key = req.params.id;
-    const retriever = new PersonRetriever(req, res, key);
+    const orm = new PersonORM(key, true);
+    const data = orm.getData();
+    const finaliser = new Finaliser();
 
-    retriever.startHere();
+console.log(data);
+
+    finaliser.protoRender(req, res, "person", data);
 });
 
 // Exports.
