@@ -20,8 +20,6 @@ router.get("/:id", function (req, res, next) {
     const data = orm.getData();
     const finaliser = new Finaliser();
 
-console.log(data);
-
     finaliser.protoRender(req, res, "person", data);
 });
 

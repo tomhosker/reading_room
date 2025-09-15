@@ -28,7 +28,10 @@ block content
                     td &mdash;
             tr
                 td #[a(href="/asis/RankTier") Rank]
-                td #{rankNameGendered}
+                if isMale
+                    td=rankTier.name 
+                else
+                    td=rankTier.nameFemale
             tr
                 td Addressed As
                 td &ldquo;#{addressedAs}&rdquo;
@@ -40,7 +43,9 @@ block content
     p #{cyprianLegalName}
     if accolades
         h4 Accolades
-        p !{accolades}
+        ul
+            for accolade of accolades
+                li #[a(href="/chivalric/"+accolade.chivalric.code) #{accolade.name}]
     if arms
         h3 Arms
             figure.big-arms-container
