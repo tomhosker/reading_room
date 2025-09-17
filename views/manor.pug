@@ -8,11 +8,15 @@ block content
         table.pbox
             tr
                 td Master
-                td !{masterLink}
-            if baronyLink
+                td
+                    if master
+                        +personLink(master)
+                    else
+                        +defaultProprietor
+            if barony
                 tr
                     td Barony
-                    td !{baronyLink}
+                    td #[a(href="/territories/baronies/"+barony.code) #{barony.name}]
 
     h1 #{title}
 

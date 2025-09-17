@@ -8,10 +8,18 @@ block content
         table.pbox
             tr
                 td Duke
-                td !{dukeLink}
+                td
+                    if duke
+                        +personLink(duke)
+                    else
+                        +defaultProprietor
             tr
                 td Lord-Warden
-                td !{lordWardenLink}
+                td
+                    if lordWarden
+                        +personLink(lordWarden)
+                    else
+                        +defaultProprietor
 
     h1 #{title}
 
@@ -24,11 +32,6 @@ block content
     if counties.length == 0
         p #[i None as yet.]
     else
-        table.mini
-            tr
-                th County
-                th Earl
+        ul
             for county in counties
-                tr
-                    td !{county.countyLink}
-                    td !{county.earlLink}
+                li #[a(href="/territories/counties/"+county.code) #{county.name}]

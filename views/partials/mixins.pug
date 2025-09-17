@@ -1,0 +1,7 @@
+mixin personLink(personObj)
+    if personObj.style
+        |#{personObj.style} 
+    |#[a(href="/people/"+personObj.code) #{personObj.shortTitle}]
+
+mixin defaultProprietor
+    |#[i His Majesty]

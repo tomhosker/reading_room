@@ -8,14 +8,22 @@ block content
         table.pbox
             tr
                 td Baron
-                td !{baronLink}
+                td
+                    if baron
+                        +personLink(baron)
+                    else
+                        +defaultProprietor
             tr
                 td Knight-Lieutenant
-                td !{knightLieutenantLink}
-            if countyLink
+                td
+                    if knightLieutenant
+                        +personLink(knightLieutenant)
+                    else
+                        +defaultProprietor
+            if county
                 tr
                     td County
-                    td !{countyLink}
+                    td #[a(href="/territories/counties/"+county.code) #{county.name}]
 
     h1 #{title}
 
@@ -28,11 +36,6 @@ block content
     if manors.length == 0
         p #[i None as yet.]
     else
-        table.mini
-            tr
-                th Manor
-                th Master
+        ul
             for manor in manors
-                tr
-                    td !{manor.manorLink}
-                    td !{manor.masterLink}
+                li #[a(href="/territories/manors/"+manor.code) #{manor.name}]
