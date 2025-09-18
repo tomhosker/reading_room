@@ -24,8 +24,12 @@ block content
                 td Demonym
                 td Cyprian
             tr
-                td Government <br/> &bull; King <br/> &bull; Regent
-                td Absolute monarchy <br/> &bull; Vacant <br/> &bull; #[a(href="/people/hosker-ii") The Duke of Limassol]
+                td Government <br/> &bull; #[a(href="/people/rex") King] <br/> &bull; Regent
+                td Absolute monarchy <br/> &bull; #[i Vacant] <br/> &bull; 
+                    if regent
+                        +personLink(regent)
+                    else
+                        | #[i Vacant]
             tr
                 td Currency
                 td Pounds sterling
@@ -42,14 +46,9 @@ block content
 
     h2 Duchies
     p The kingdom is organised along feudal lines, drawing inspiration chiefly from the English system of peerages and manorialism. Accordingly, the kingdom is divided into duchies, which are themselves further divided into counties, baronies and manors.
-    table.mini
-        tr
-            th Name
-            th Duke
+    ul
         for duchy in duchies
-            tr
-                td !{duchy.duchyLink}
-                td !{duchy.dukeLink}
+            li #[a(href="/territories/duchies/"+duchy.code) #{duchy.name}]
 
     h2 Government and Law
     p The kingdom is an absolute monarchy: all legitimate authority flows from the Cyprian crown. The King exercises executive power through His Majesty's Government, and legislative power through promulgating letters patent. A register of such patents can be found #[a(href="/patents") here].

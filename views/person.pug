@@ -37,6 +37,24 @@ block content
                 td &ldquo;#{addressedAs}&rdquo;
     h1 #{title}
     p #[b #{shortTitle}] #{bio}
+    if bloodLinks
+        p
+            for bloodLink in bloodLinks
+                if isMale
+                    if bloodLink.senior == code
+                        | He is the #{bloodLink.type} of 
+                        +personLink(bloodLink.junior)
+                    else
+                        +personLink(bloodLink.senior)
+                        |  is his #{bloodLink.type}
+                else
+                    if bloodLink.senior == code
+                        | She is the #{bloodLink.type} of 
+                        +personLink(bloodLink.junior)
+                    else
+                        +personLink(bloodLink.senior)
+                        |  is her #{bloodLink.type}
+                |. 
 
     h2 Cyprian Data
     h3 Cyprian Legal Name

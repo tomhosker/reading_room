@@ -6,19 +6,25 @@ Returns the pages for the various territories.
 const express = require("express");
 
 // Local imports.
-const KingdomRetriever = require("../lib/retrievers/kingdom_retriever.js");
-
 const Finaliser = require("../lib/finaliser.js");
-const {ManorORM, BaronyORM, CountyORM, DuchyORM} = require("../lib/orm/territorial_orms.js");
+const {
+    ManorORM,
+    BaronyORM,
+    CountyORM,
+    DuchyORM,
+    KingdomORM
+} = require("../lib/orm/territorial_orms.js");
 
 // Constants.
 const router = express.Router();
 
 // Get the Kingdom's page.
 router.get("/kingdom", function (req, res, next) {
-    const retriever = new KingdomRetriever(req, res);
+    const orm = new KingdomORM(null, true);
+    const data = orm.getData();
+    const finaliser = new Finaliser();
 
-    retriever.startHere();
+    finaliser.protoRender(req, res, "kingdom", data);
 });
 
 // Get a duchy's page.
@@ -28,7 +34,8 @@ router.get("/duchies/:id", function (req, res, next) {
     const data = orm.getData();
     const finaliser = new Finaliser();
 
-    finaliser.protoRender(req, res, "duchy", data);
+    if (!data) res.send(`No duchy with code: ${key}`);
+    else finaliser.protoRender(req, res, "duchy", data);
 });
 
 // Get a county's page.
@@ -38,7 +45,8 @@ router.get("/counties/:id", function (req, res, next) {
     const data = orm.getData();
     const finaliser = new Finaliser();
 
-    finaliser.protoRender(req, res, "county", data);
+    if (!data) res.send(`No county with code: ${key}`);
+    else finaliser.protoRender(req, res, "county", data);
 });
 
 // Get a barony's page.
@@ -48,7 +56,8 @@ router.get("/baronies/:id", function (req, res, next) {
     const data = orm.getData();
     const finaliser = new Finaliser();
 
-    finaliser.protoRender(req, res, "barony", data);
+    if (!data) res.send(`No barony with code: ${key}`);
+    else finaliser.protoRender(req, res, "barony", data);
 });
 
 // Get a manor's page.
@@ -58,7 +67,8 @@ router.get("/manors/:id", function (req, res, next) {
     const data = orm.getData();
     const finaliser = new Finaliser();
 
-    finaliser.protoRender(req, res, "manor", data);
+    if (!data) res.send(`No manor with code: ${key}`);
+    else finaliser.protoRender(req, res, "manor", data);
 });
 
 // Exports.

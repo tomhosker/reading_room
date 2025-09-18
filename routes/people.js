@@ -7,11 +7,10 @@ const express = require("express");
 
 // Local imports.
 const Finaliser = require("../lib/finaliser.js");
-const PersonORM = require("../lib/orm/person_orm.js");
+const {PersonORM} = require("../lib/orm/person_orm.js");
 
 // Constants.
 const router = express.Router();
-
 
 // Get a person's page.
 router.get("/:id", function (req, res, next) {
@@ -20,7 +19,8 @@ router.get("/:id", function (req, res, next) {
     const data = orm.getData();
     const finaliser = new Finaliser();
 
-    finaliser.protoRender(req, res, "person", data);
+    if (!data) res.send(`No person with code: ${key}`);
+    else finaliser.protoRender(req, res, "person", data);
 });
 
 // Exports.

@@ -15,10 +15,11 @@ block content
         table.pbox
             tr
                 td Master
-                if masterLink
-                    td !{masterLink}
-                else
-                    td #[i None]
+                td
+                    if master
+                        +personLink(master)
+                    else
+                        +defaultProprietor
 
     h1 #{title}
 
@@ -28,6 +29,9 @@ block content
     for accolade in accolades
         h3 #{accolade.name}
         if accolade.holders.length == 0
-            p #[i Not awarded]
+            p #[i Not awarded.]
         else
-            p !{accolade.holders.join(" &diam; ")}
+            each holder, index in accolade.holders
+                +personLink(holder)
+                if index != accolade.holders.length-1
+                    | &nbsp;&diam;&nbsp;

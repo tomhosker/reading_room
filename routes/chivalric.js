@@ -6,18 +6,21 @@ Returns the pages for the various chivalric orders.
 const express = require("express");
 
 // Local imports.
-const ChivalricRetriever = require("../lib/retrievers/chivalric_retriever.js");
+const Finaliser = require("../lib/finaliser.js");
+const ChivalricORM = require("../lib/orm/chivalric_orm.js");
 
 // Constants.
 const router = express.Router();
 
-
 // Get a chivalric order's page.
 router.get("/:id", function (req, res, next) {
     const key = req.params.id;
-    const retriever = new ChivalricRetriever(req, res, key);
+    const orm = new ChivalricORM(key, true);
+    const data = orm.getData();
+    const finaliser = new Finaliser();
 
-    retriever.startHere();
+    if (!data) res.send(`No chivalric order with code: ${key}`);
+    else finaliser.protoRender(req, res, "chivalric", data);
 });
 
 // Exports.
