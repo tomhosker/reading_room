@@ -6,10 +6,12 @@ Returns the pages for the various pages relating to the Royal Cyprian Academy.
 const express = require("express");
 
 // Local imports.
-const AcademyRetriever = require("../lib/retrievers/academy_retriever.js");
-const FacultyRetriever = require("../lib/retrievers/faculty_retriever.js");
-const DepartmentRetriever =
-    require("../lib/retrievers/department_retriever.js");
+const Finaliser = require("../lib/finaliser.js");
+const {
+    DepartmentORM,
+    FacultyORM,
+    AcademyORM
+} = require("../lib/orm/academy_orms.js");
 const {
     HoskersAlmanackRetriever,
     HoskersCatalogueRetriever,
@@ -35,30 +37,38 @@ const KEY_TO_RETRIEVER_CLASS = {
 
 // Get the academy's page.
 router.get("/", function (req, res, next) {
-    const retriever = new AcademyRetriever(req, res);
+    const orm = new AcademyORM(null, true);
+    const data = orm.getData();
+    const finaliser = new Finaliser();
 
-    retriever.startHere();
-});
-
-// Get the page for the list of all the Academy's books.
-router.get("/books", function (req, res, next) {
-    const retriever = new BooksRetriever(req, res);
-
-    retriever.startHere();
+    finaliser.protoRender(req, res, "academy", data);
 });
 
 // Get the page for a given faculty.
 router.get("/faculties/:id", function (req, res, next) {
     const key = req.params.id;
-    const retriever = new FacultyRetriever(req, res, key);
+    const orm = new FacultyORM(key, true);
+    const data = orm.getData();
+    const finaliser = new Finaliser();
 
-    retriever.startHere();
+    if (!data) res.send(`No faculty with code: ${key}`);
+    else finaliser.protoRender(req, res, "faculty", data);
 });
 
 // Get the page for a given department.
 router.get("/departments/:id", function (req, res, next) {
     const key = req.params.id;
-    const retriever = new DepartmentRetriever(req, res, key);
+    const orm = new DepartmentORM(key, true);
+    const data = orm.getData();
+    const finaliser = new Finaliser();
+
+    if (!data) res.send(`No department with code: ${key}`);
+    else finaliser.protoRender(req, res, "department", data);
+});
+
+// Get the page for the list of all the Academy's books.
+router.get("/books", function (req, res, next) {
+    const retriever = new BooksRetriever(req, res);
 
     retriever.startHere();
 });

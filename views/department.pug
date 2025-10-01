@@ -9,32 +9,36 @@ block content
         table.pbox
             tr
                 td Professor
-                td !{professorLink}
-            if facultyLink
+                td
+                    if professor
+                        +personLink(professor)
+                    else
+                        +defaultScholar
+            if faculty
                 tr
                     td Faculty
-                    td !{facultyLink}
+                    td #[a(href="/academy/faculties/"+faculty.code) #{faculty.name}]
 
     h1 #{title}
 
     if description
-        p !{description}
-    else if facultyLink
-        p The #[b #{title}] is a constituent department of the !{facultyLink}.
+        p=description
+    else if faculty
+        p The #[b #{title}] is a constituent department of the #[a(href="/academy/faculties/"+faculty.code) #{faculty.name}].
     else
         p The #[b #{title}] is a department of the #[a(href="/academy") Royal Cyprian Academy].
 
-    if ["literature", "music", "film"].includes(key)
+    if ["literature", "music", "film"].includes(code)
         h2 Canons
-        if key == "literature"
+        if code == "literature"
             ul
                 li #[a(href="/academy/canons/almanack") Hosker's Almanack]
                 li #[a(href="/academy/canons/catalogue") Hosker's Catalogue]
-        else if key == "music"
+        else if code == "music"
             ul
                 li #[a(href="/academy/canons/anthems") Hosker's Anthems]
                 li #[a(href="/academy/canons/albums") Hosker's Albums]
-        else if key == "film"
+        else if code == "film"
             ul
                 li #[a(href="/academy/canons/cinema") Hosker's Cinema]
                 li #[a(href="/academy/canons/television") Hosker's Television]

@@ -9,7 +9,11 @@ block content
         table.pbox
             tr
                 td Pro-Vice-Chancellor
-                td !{proViceChancellorLink}
+                td
+                    if proViceChancellor
+                        +personLink(proViceChancellor)
+                    else
+                        +defaultScholar
             tr
                 td Parent organisation
                 td #[a(href="/academy") Royal Cyprian Academy]
@@ -17,7 +21,7 @@ block content
     h1 #{title}
 
     if description
-        p !{description}
+        p=description
     else
         p The #[b #{title}] is a constituent faculty of the #[a(href="/academy") Royal Cyprian Academy].
 
@@ -25,4 +29,4 @@ block content
         h2 Departments
         ul
             for department in departments
-                li !{department}
+                li #[a(href="/academy/departments/"+department.code) #{department.name}]

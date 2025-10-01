@@ -8,10 +8,18 @@ block content
         table.pbox
             tr
                 td Chancellor
-                td !{chancellorLink}
+                td
+                    if chancellor
+                        +personLink(chancellor)
+                    else
+                        +defaultScholar
             tr
                 td Vice-Chancellor
-                td !{viceChancellorLink}
+                td
+                    if viceChancellor
+                        +personLink(viceChancellor)
+                    else
+                        +defaultScholar
 
     h1 #{title}
 
@@ -25,7 +33,7 @@ block content
         p In order to better achieve the above aims, the Academy is divided into these faculties:
         ul
             for faculty in faculties
-                li !{faculty}
+                li #[a(href="/academy/faculties/"+faculty.code) #{faculty.name}]
 
     h3 Other Pages
     ul
