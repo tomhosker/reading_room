@@ -45,37 +45,15 @@ block content
 
     if library
         h2 Library
-        table.midi
-            tr
-                th &numero;
-                th Title
-                th Author
-                th Year
-                th In #[a(href="/academy/canons/catalogue") Catalogue]?
-                th Notes
-            for book in library
-                tr
-                    td=book.id
-                    if book.link
-                        td #[a(href=book.link) #[i #{book.title}]]
-                    else
-                        td #[i #{book.title}]
-                    if book.fullTitle
-                        td=book.fullTitle
-                    else
-                        td &mdash;
-                    if book.yearPublished
-                        td=book.yearPublished
-                    else
-                        td &mdash;
-                    if book.inCatalogue
-                        td #[span.green &#10004;]
-                    else
-                        if ["poetry", "hebrew", "greek", "latin"].includes(book.genre)
-                            td #[span.red &#10006;]
-                        else
-                            td #[span.grey &#10004;]
-                    if book.notes
-                        td !{book.notes}
-                    else
-                        td &mdash;
+        if code == "theology"
+            h3 Theology Proper
+            +libraryTable(library.theology)
+            h3 Sacred Languages
+            h4 Hebrew
+            +libraryTable(library.hebrew)
+            h4 Greek
+            +libraryTable(library.greek)
+            h4 Latin
+            +libraryTable(library.latin)
+        else
+            +libraryTable(library)

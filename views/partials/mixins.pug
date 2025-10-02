@@ -8,3 +8,39 @@ mixin defaultProprietor
 
 mixin defaultScholar
     |#[i Vacant]
+
+mixin libraryTable(data)
+    table.midi
+        tr
+            th &numero;
+            th Title
+            th Author
+            th Year
+            th In #[a(href="/academy/canons/catalogue") Catalogue]?
+            th Notes
+        for book in data
+            tr
+                td=book.id
+                if book.link
+                    td #[a(href=book.link) #[i #{book.title}]]
+                else
+                    td #[i #{book.title}]
+                if book.authorFull
+                    td=book.authorFull
+                else
+                    td &mdash;
+                if book.yearPublished
+                    td=book.yearPublished
+                else
+                    td &mdash;
+                if book.inCatalogue
+                    td #[span.green &#10004;]
+                else
+                    if ["poetry", "hebrew", "greek", "latin"].includes(book.genre)
+                        td #[span.red &#10006;]
+                    else
+                        td #[span.grey &#10004;]
+                if book.notes
+                    td !{book.notes}
+                else
+                    td &mdash;
