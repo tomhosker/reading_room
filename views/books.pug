@@ -1,24 +1,40 @@
 extends layout
 
 block content
-    profilebox.manor
-        h2 #{title}
-        figure.pbox
-            img.pbox(src="/images/arms_academy.svg")
-        table.pbox
-            tr
-                td Parent organisation
-                td #[a(href="/academy") Royal Cyprian Academy]
-
     h1 #{title}
 
-    p There follows a list of all the #[b books] in the various libraries of the Academy.
-
-    table.midi
+    table.maxi
         tr
-            for heading in data.headings
-                th !{heading}
-        for row in data.rows
+            th &numero;
+            th Title
+            th Author
+            th Year
+            th In #[a(href="/academy/canons/catalogue") Catalogue]?
+            th Notes
+        for book in books
             tr
-                for item in row
-                    td !{item}
+                td=book.id
+                if book.link
+                    td #[a(href=book.link) #[i #{book.title}]]
+                else
+                    td #[i #{book.title}]
+                if book.authorFull
+                    td=book.authorFull
+                else
+                    td &mdash;
+                td
+                    if book.authorFull
+                        | #{book.authorFull}
+                    else
+                        | &mdash;
+                if book.inCatalogue
+                    td #[span.green &#10004;]
+                else
+                    if ["poetry", "hebrew", "greek", "latin"].includes(book.genre)
+                        td #[span.red &#10006;]
+                    else
+                        td #[span.grey &#10004;]
+                if book.notes
+                    td !{book.notes}
+                else
+                    td &mdash;

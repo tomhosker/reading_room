@@ -13,27 +13,17 @@ const {
     AcademyORM
 } = require("../lib/orm/academy_orms.js");
 const {
-    HoskersAlmanackRetriever,
-    HoskersCatalogueRetriever,
-    HoskersAnthemsRetriever,
-    HoskersAlbumsRetriever,
-    HoskersCinemaRetriever,
-    HoskersTelevisionRetriever,
-    BooksRetriever
-} = require("../lib/retrievers/canon_retriever.js");
+    AllBooksORM,
+    AlmanackORM,
+    CatalogueORM,
+    AnthemsORM,
+    AlbumsORM,
+    CinemaORM,
+    TelevisionORM
+} = require("../lib/orm/media_orms.js");
 
 // Local constant objects.
 const router = express.Router();
-
-// Local constants.
-const KEY_TO_RETRIEVER_CLASS = {
-    almanack: HoskersAlmanackRetriever,
-    catalogue: HoskersCatalogueRetriever,
-    anthems: HoskersAnthemsRetriever,
-    albums: HoskersAlbumsRetriever,
-    cinema: HoskersCinemaRetriever,
-    television: HoskersTelevisionRetriever
-};
 
 // Get the academy's page.
 router.get("/", function (req, res, next) {
@@ -68,18 +58,31 @@ router.get("/departments/:id", function (req, res, next) {
 
 // Get the page for the list of all the Academy's books.
 router.get("/books", function (req, res, next) {
-    const retriever = new BooksRetriever(req, res);
+    const orm = new AllBooksORM();
+    const data = orm.getData();
+    const finaliser = new Finaliser();
 
-    retriever.startHere();
+    finaliser.protoRender(req, res, "books", data);
 });
 
 // Get the page for a given canon.
 router.get("/canons/:id", function (req, res, next) {
     const key = req.params.id;
-    const RetrieverClass = KEY_TO_RETRIEVER_CLASS[key];
-    const retriever = new RetrieverClass(req, res, key);
+    const finaliser = new Finaliser();
+    let orm;
+    let data = null;
 
-    retriever.startHere();
+    if (key === "almanack") orm = new AlmanackORM();
+    else if (key === "catalogue") orm = new CatalogueORM;
+    else if (key === "anthems") orm = new AnthemsORM;
+    else if (key === "albums") orm = new AlbumsORM;
+    else if (key === "cinema") orm = new CinemaORM;
+    else if (key === "television") orm = new TelevisionORM;
+
+    if (orm) data = orm.getData();
+
+    if (!data) res.send(`No canon with key: ${key}`);
+    else finaliser.protoRender(req, res, "canon", data);
 });
 
 // Exports.

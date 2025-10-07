@@ -21,6 +21,7 @@ block content
 
     if key == "almanack"
         p #[b Hosker's Almanack] provides a canon of the very finest English poetry.
+        p An ongoing project, view the GitHub repository for the work to date #[a(href="https://github.com/tomhosker/hoskers_almanack") here].
     else if key == "catalogue"
         p #[b Hosker's Catalogue] documents the collection of physical books owned by #[a(href="/people/hosker-ii") The Duke of Limassol].
     else if key == "anthems"
@@ -32,12 +33,116 @@ block content
     else if key == "television"
         p #[b Hosker's Cinema] provides a canon of the finest television ever made.
 
-    if data
+    if key == "catalogue"
         table.midi
             tr
-                for heading in data.headings
-                    th !{heading}
-            for row in data.rows
+                th &numero;
+                th Title
+                th Author
+                th #[a(href="/academy/books") In library?]
+                th Genre
+                th Notes
+            for item in catalogue
                 tr
-                    for item in row
-                        td !{item}
+                    td=item.id
+                    td #[i #{item.title}]
+                    td
+                        +printOrNull(item.authorFull)
+                    td
+                        if item.inLibrary
+                            | #[span.green &#10004;]
+                        else
+                            | #[span.red &#10006;]
+                    td=item.genre
+                    if item.notes
+                        td !{item.notes}
+                    else
+                        td &mdash;
+    else if key == "anthems"
+        table.midi
+            tr
+                th &numero;
+                th Title
+                th Artists
+                th Notes
+            for item in anthems
+                tr
+                    td=item.rank
+                    td
+                        if item.internalLink
+                            | #[a(href=item.internalLink) ``#{item.title}'']
+                        else if item.externalLink
+                            | #[a(href=item.externalLink) ``#{item.title}'']
+                        else
+                            | ``#{item.title}''
+                    td
+                        +printOrNull(item.artists)
+                    if item.notes
+                        td !{item.notes}
+                    else
+                        td &mdash;
+    else if key == "albums"
+        table.midi
+            tr
+                th &numero;
+                th Title
+                th Artists
+                th Notes
+            for item in albums
+                tr
+                    td=item.rank
+                    td
+                        if item.title == "Hosker's Anthems"
+                            | #[a(href="/academy/canons/anthems") #[i Hosker's Anthems]]
+                        else if item.link
+                            | #[a(href=item.link) #[i #{item.title}]]
+                        else
+                            | #[i #{item.title}]
+                    td
+                        +printOrNull(item.artists)
+                    if item.notes
+                        td !{item.notes}
+                    else
+                        td &mdash;
+    else if key == "cinema"
+        table.midi
+            tr
+                th &numero;
+                th Title
+                th Genre
+                th Notes
+            for item in films
+                tr
+                    td=item.rank
+                    td
+                        if item.internalLink
+                            | #[a(href=item.internalLink) #[i #{item.title}] (#{item.year})]
+                        else if item.externalLink
+                            | #[a(href=item.externalLink) #[i #{item.title}] (#{item.year})]
+                        else
+                            | #[i #{item.title}] (#{item.year})
+                    td=item.genre
+                    if item.notes
+                        td !{item.notes}
+                    else
+                        td &mdash;
+    else if key == "television"
+        table.midi
+            tr
+                th &numero;
+                th Title
+                th Notes
+            for item in series
+                tr
+                    td=item.rank
+                    td
+                        if item.internalLink
+                            | #[a(href=item.internalLink) #[i #{item.title}] (#{item.startYear}-#{item.endYear})]
+                        else if item.externalLink
+                            | #[a(href=item.externalLink) #[i #{item.title}] (#{item.startYear}-#{item.endYear})]
+                        else
+                            | #[i #{item.title}] (#{item.startYear}-#{item.endYear})
+                    if item.notes
+                        td !{item.notes}
+                    else
+                        td &mdash;

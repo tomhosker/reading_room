@@ -9,6 +9,12 @@ mixin defaultProprietor
 mixin defaultScholar
     |#[i Vacant]
 
+mixin printOrNull(data)
+    if data
+        | #{data}
+    else
+        | &mdash;
+
 mixin libraryTable(data)
     table.midi
         tr
@@ -25,14 +31,10 @@ mixin libraryTable(data)
                     td #[a(href=book.link) #[i #{book.title}]]
                 else
                     td #[i #{book.title}]
-                if book.authorFull
-                    td=book.authorFull
-                else
-                    td &mdash;
-                if book.yearPublished
-                    td=book.yearPublished
-                else
-                    td &mdash;
+                td
+                    +printOrNull(book.authorFull)
+                td
+                    +printOrNull(book.yearPublished)
                 if book.inCatalogue
                     td #[span.green &#10004;]
                 else
