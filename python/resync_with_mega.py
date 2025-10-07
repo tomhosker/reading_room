@@ -8,8 +8,8 @@ import json
 from pathlib import Path
 
 # Local imports.
-from reading_room import MegaDownloader
-from reading_room.paths import PATH_TO_MEDIA_DB, PATH_TO_MEGA_DOWNLOADS
+from ..source import MegaDownloader
+from ..source.paths import PATH_TO_MEDIA_DB, PATH_TO_MEGA_DOWNLOADS
 
 # Local constants.
 PATH_TO_MEGA_ID_JSON = str(Path.home()/"mega_id.json")
