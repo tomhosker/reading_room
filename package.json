@@ -1,10 +1,10 @@
 {
     "name": "reading_room",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "private": false,
     "scripts": {
         "devstart": "nodemon ./bin/www",
-        "preinstall": "sh sh/install_3rd_party.sh",
+        "preinstall": "sh sh/preinstall.sh",
         "prettier": "npx prettier --write .",
         "start": "node ./bin/www",
         "test": "nyc mocha",

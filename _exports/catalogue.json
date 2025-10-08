@@ -1,0 +1,1109 @@
+[
+    {
+        "id": 2,
+        "title": "Epic of Gilgamesh, The",
+        "author": null,
+        "year_published": 1960,
+        "in_library": 1,
+        "genre": "hebrew",
+        "notes": "`An English version with an introduction by N K Sandars'."
+    },
+    {
+        "id": 3,
+        "title": "Collected Poems of Nikos Kavadias, The",
+        "author": "kavadias",
+        "year_published": 2006,
+        "in_library": 0,
+        "genre": "greek",
+        "notes": "`Bilingual Edition... Translated by Gail Holst-Warhaft'."
+    },
+    {
+        "id": 4,
+        "title": "Old Testament in Greek, Volume I, The",
+        "author": null,
+        "year_published": 1895,
+        "in_library": 1,
+        "genre": "greek",
+        "notes": "`Edited for the Syndics of the University Press by Henry Barclay Swete'"
+    },
+    {
+        "id": 5,
+        "title": "Old Testament in Greek, Volume II, The",
+        "author": null,
+        "year_published": 1896,
+        "in_library": 1,
+        "genre": "greek",
+        "notes": null
+    },
+    {
+        "id": 6,
+        "title": "Old Testament in Greek, Volume III, The",
+        "author": null,
+        "year_published": 1899,
+        "in_library": 1,
+        "genre": "greek",
+        "notes": null
+    },
+    {
+        "id": 7,
+        "title": "\u1f29 \u039a\u03b1\u03b9\u03bd\u1f74 \u0394\u03b9\u03b1\u03b8\u03ae\u03ba\u03b7",
+        "author": null,
+        "year_published": 1877,
+        "in_library": 1,
+        "genre": "greek",
+        "notes": "`Curante F. H. A. Scrivener'. &#182; Inscribed: `R Cruickshank... Bought from my dear friend the late William Lawrence Bryes MA, who was ordained to the diaconate with me in Edinburgh Cathedral on St Thomas' Day 1880 --- died 5th Jan 1882.' This R Cruickshank is almost certainly the Rev Robert Cruickshank, a priest of the Scottish Episcopal Church."
+    },
+    {
+        "id": 8,
+        "title": "Select Epigrams from the Greek Anthology",
+        "author": null,
+        "year_published": 1915,
+        "in_library": 1,
+        "genre": "greek",
+        "notes": "`Edited by J. W. Mackail'. &#182; Inscribed: `This belonged to \u03a7\u03a1\u0399\u03a3 [Chris] who died in June 1943 in the midlands' with a Greek quotation. Above this is a card indicating that the book belonged to a `Lionel Gough'."
+    },
+    {
+        "id": 68,
+        "title": "Holy Bible, Revised Standard Version, The",
+        "author": null,
+        "year_published": 1971,
+        "in_library": 1,
+        "genre": "greek",
+        "notes": "`In Memory of Albert Greenwood... Hollinshead Street United Reformed Church Chorley'."
+    },
+    {
+        "id": 72,
+        "title": "Kisses",
+        "author": "secundus",
+        "year_published": 1775,
+        "in_library": 1,
+        "genre": "latin",
+        "notes": "`An English translation in verse of the <em>Basia</em> of Joannes Secundus Nicola\u00efus of the Hague, accompanied with the original Latin text.'"
+    },
+    {
+        "id": 1,
+        "title": "Poems of Lascelles Abercrombie, The",
+        "author": "abercrombie",
+        "year_published": 1930,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "Inscribed with a card: `Ex Libris W P Ward'."
+    },
+    {
+        "id": 9,
+        "title": "Miscellaneous Works of Joseph Addison, Volume I: Poems and Plays, The",
+        "author": "addison",
+        "year_published": 1914,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "This copy is from the library of Jesus College."
+    },
+    {
+        "id": 73,
+        "title": "Miscellaneous Works in Verse and Prose, Volume the First",
+        "author": "addison",
+        "year_published": 1746,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 74,
+        "title": "Miscellaneous Works in Verse and Prose, Volume the Second",
+        "author": "addison",
+        "year_published": 1746,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 75,
+        "title": "Miscellaneous Works in Verse and Prose, Volume the Third",
+        "author": "addison",
+        "year_published": 1746,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 10,
+        "title": "Poems of Rural Life",
+        "author": "barnes",
+        "year_published": 1847,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 12,
+        "title": "Poetical Works of Elizabeth Barrett Browning, The",
+        "author": "bbrowning",
+        "year_published": 1910,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 11,
+        "title": "Collected Verse",
+        "author": "belloc",
+        "year_published": 1958,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 123,
+        "title": "Poetical Works of Robert Bridges, The",
+        "author": "bridges",
+        "year_published": 1959,
+        "in_library": 0,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 112,
+        "title": "1914 and Other Poems",
+        "author": "brooke",
+        "year_published": 1917,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 13,
+        "title": "Poetical Works of Robert Browning, Volume I, The",
+        "author": "browning",
+        "year_published": 1896,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 14,
+        "title": "Poetical Works of Robert Browning, Volume II, The",
+        "author": "browning",
+        "year_published": 1896,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 67,
+        "title": "Pilgrim's Progress and Other Allegorical Works, The",
+        "author": "bunyan",
+        "year_published": 1890,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "The proximate year of publication is an educated guess. &#182; Published by `A Fullarton and Co'. &#182; This volume is too large to be kept with my other volumes of poetry. &#182; This volume was a 21st birthday gift from my parents."
+    },
+    {
+        "id": 115,
+        "title": "Works of Robert Burns, Volume I, The",
+        "author": "burns",
+        "year_published": 1803,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 116,
+        "title": "Works of Robert Burns, Volume II, The",
+        "author": "burns",
+        "year_published": 1803,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 117,
+        "title": "Works of Robert Burns, Volume III, The",
+        "author": "burns",
+        "year_published": 1803,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 118,
+        "title": "Works of Robert Burns, Volume IV, The",
+        "author": "burns",
+        "year_published": 1803,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 120,
+        "title": "Robert Burns's Complete Poetical Works",
+        "author": "burns",
+        "year_published": 1900,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 15,
+        "title": "Poetical Works of Lord Byron, The",
+        "author": "byron",
+        "year_published": 1912,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 77,
+        "title": "Works of Lord Byron, Volume I, The",
+        "author": "byron",
+        "year_published": 1825,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "`In six volumes.'"
+    },
+    {
+        "id": 78,
+        "title": "Works of Lord Byron, Volume II, The",
+        "author": "byron",
+        "year_published": 1825,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 79,
+        "title": "Works of Lord Byron, Volume III, The",
+        "author": "byron",
+        "year_published": 1825,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 80,
+        "title": "Works of Lord Byron, Volume IV, The",
+        "author": "byron",
+        "year_published": 1825,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 81,
+        "title": "Works of Lord Byron, Volume V, The",
+        "author": "byron",
+        "year_published": 1825,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 82,
+        "title": "Works of Lord Byron, Volume VI, The",
+        "author": "byron",
+        "year_published": 1825,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 83,
+        "title": "Works of Lord Byron, Volume VII, The",
+        "author": "byron",
+        "year_published": 1825,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "Volumes I---VI are marked, `In six volumes'. Lord Byron died in 1824; perhaps the publishers discovered more material midway through the publishing process?"
+    },
+    {
+        "id": 84,
+        "title": "Works of Lord Byron, Volume VIII, The",
+        "author": "byron",
+        "year_published": 1825,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 27,
+        "title": "Poetical Works of Thomas Campbell, The",
+        "author": "campbell",
+        "year_published": 1890,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "The proximate year of publication is an educated guess."
+    },
+    {
+        "id": 28,
+        "title": "Shepherd's Calendar, The",
+        "author": "clare",
+        "year_published": 2014,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "`...with wood engravings by David Gentleman'."
+    },
+    {
+        "id": 29,
+        "title": "Poetical Works of William Cowper, The",
+        "author": "cowper",
+        "year_published": 1845,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "`With a preface by the Rev T S Grimshawe'. &#182; Inscribed: `Mary Anne Hamond. A birthday present from her cousin... Oct 12 1845.'"
+    },
+    {
+        "id": 51,
+        "title": "Poetical Works of Edmund Waller and Sir John Denham, The [D]",
+        "author": "denham",
+        "year_published": 1868,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "This is a deliberate duplicate entry for the unusual case of two poets' works being printed in one volume."
+    },
+    {
+        "id": 122,
+        "title": "Emily Dickinson: The Complete Poems",
+        "author": "dickinson",
+        "year_published": 2016,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 30,
+        "title": "Poems of John Dryden, The",
+        "author": "dryden",
+        "year_published": 1910,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "`Edited with an introduction and textual notes by John Sargeaunt'. &#182; Inscribed: `EFSS from KJM Xmas 1921' and `H Barnett'."
+    },
+    {
+        "id": 69,
+        "title": "Works of Virgil, Volume I, The",
+        "author": "dryden",
+        "year_published": 1716,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "`The Fourth Edition'. Sold to me (via my father) by Peter Harrington."
+    },
+    {
+        "id": 70,
+        "title": "Works of Virgil, Volume II, The",
+        "author": "dryden",
+        "year_published": 1716,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 71,
+        "title": "Works of Virgil, Volume III, The",
+        "author": "dryden",
+        "year_published": 1716,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 31,
+        "title": "Collected Poems 1909-1962",
+        "author": "eliot",
+        "year_published": 1974,
+        "in_library": 0,
+        "genre": "poetry",
+        "notes": "This was a 21st birthday gift to my mother."
+    },
+    {
+        "id": 16,
+        "title": "Collected Poems 1905---1925",
+        "author": "gibson",
+        "year_published": 1926,
+        "in_library": 0,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 17,
+        "title": "Golden Room and Other Poems, The",
+        "author": "gibson",
+        "year_published": 1928,
+        "in_library": 0,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 18,
+        "title": "Hazards",
+        "author": "gibson",
+        "year_published": 1930,
+        "in_library": 0,
+        "genre": "poetry",
+        "notes": "This copy is from Belfast Public Libraries."
+    },
+    {
+        "id": 19,
+        "title": "Islands",
+        "author": "gibson",
+        "year_published": 1932,
+        "in_library": 0,
+        "genre": "poetry",
+        "notes": "This copy is from Belfast Public Libraries."
+    },
+    {
+        "id": 20,
+        "title": "Fuel",
+        "author": "gibson",
+        "year_published": 1934,
+        "in_library": 0,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 21,
+        "title": "Coming and Going",
+        "author": "gibson",
+        "year_published": 1938,
+        "in_library": 0,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 22,
+        "title": "Alert, The",
+        "author": "gibson",
+        "year_published": 1941,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "This copy is from the County Library of Dunbarton."
+    },
+    {
+        "id": 23,
+        "title": "Challenge",
+        "author": "gibson",
+        "year_published": 1942,
+        "in_library": 0,
+        "genre": "poetry",
+        "notes": "This copy is from the National Library of Scotland."
+    },
+    {
+        "id": 24,
+        "title": "Searchlights, The",
+        "author": "gibson",
+        "year_published": 1943,
+        "in_library": 0,
+        "genre": "poetry",
+        "notes": "This copy is from the library of Tremough Convent."
+    },
+    {
+        "id": 25,
+        "title": "Outpost, The",
+        "author": "gibson",
+        "year_published": 1944,
+        "in_library": 0,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 26,
+        "title": "Coldknuckles",
+        "author": "gibson",
+        "year_published": 1947,
+        "in_library": 0,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 32,
+        "title": "Gray's English Poems",
+        "author": "gray",
+        "year_published": 1904,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "`Edited by D C Tovey'. &#182; Inscribed (in pencil): `G M Workman BA Div'."
+    },
+    {
+        "id": 33,
+        "title": "Collected Poems of Thomas Hardy",
+        "author": "hardy",
+        "year_published": 1930,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "This edition is, allegedly, the very first complete Collected Poems of Hardy ever printed. &#182; Inscribed: `Douglas Feaver July 1939'."
+    },
+    {
+        "id": 119,
+        "title": "Poetical Works of Robert Herrick, The",
+        "author": "herrick",
+        "year_published": 1859,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 34,
+        "title": "Poetical Works of Thomas Hood, The",
+        "author": "hood",
+        "year_published": 1870,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "The proximate year of publication is an educated guess. &#182; This edition was published by `E Moxon, Son and Company'."
+    },
+    {
+        "id": 35,
+        "title": "Gerard Manley Hopkins, The Major Works",
+        "author": "hopkins",
+        "year_published": 2009,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 36,
+        "title": "Works of Ben Jonson, The",
+        "author": "jonson",
+        "year_published": 1873,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "`With a biographical memoir by William Gifford.'"
+    },
+    {
+        "id": 37,
+        "title": "Poetical Works of John Keats, The",
+        "author": "keats",
+        "year_published": 1879,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "`Chronologically arranged and edited, with a memoir, by Lord Houghton [i.e. Richard Milnes, 1st Baron Houghton]'."
+    },
+    {
+        "id": 113,
+        "title": "Definitive Edition of Rudyard Kipling's Verse, The",
+        "author": "kipling",
+        "year_published": 1977,
+        "in_library": 0,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 38,
+        "title": "Complete Poems of D H Lawrence, The",
+        "author": "lawrence",
+        "year_published": 2002,
+        "in_library": 0,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 39,
+        "title": "Poetical Works of Longfellow, The",
+        "author": "longfellow",
+        "year_published": 1907,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 114,
+        "title": "Poems of Digby Mackworth Dolben",
+        "author": "mackworth",
+        "year_published": 1915,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 45,
+        "title": "Collected Poems of Walter de la Mare, The",
+        "author": "mare",
+        "year_published": 1979,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 44,
+        "title": "Poetical Works of John Milton, The",
+        "author": "milton",
+        "year_published": 1891,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "The proximate date is an educated guess. This volume is part of the `Lansdowne Poets' series."
+    },
+    {
+        "id": 41,
+        "title": "Poetical Works of Alexander Pope, Volume III, The",
+        "author": "pope",
+        "year_published": 1909,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 42,
+        "title": "Poetical Works of Alexander Pope, Volume II, The",
+        "author": "pope",
+        "year_published": 1896,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 43,
+        "title": "Poetical Works of Alexander Pope, Volume I, The",
+        "author": "pope",
+        "year_published": 1908,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "`Revised by G R Dennis... with a memoir with John Dennis'."
+    },
+    {
+        "id": 85,
+        "title": "Poetical Works of Alexander Pope, The",
+        "author": "pope",
+        "year_published": 1807,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 40,
+        "title": "Poetical Works of Dante Gabriel Rossetti, The",
+        "author": "rossetti",
+        "year_published": 1898,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "`Edited with a preface by William M Rossetti'. &#182; Inscribed: `Charles Wright ``Noel'' 1900' and then some illegible text, possibly in French; also `G F March 1945'."
+    },
+    {
+        "id": 121,
+        "title": "Collected Poems 1908-1956",
+        "author": "sassoon",
+        "year_published": 1984,
+        "in_library": 0,
+        "genre": "poetry",
+        "notes": "The poet published two more books after 1956, the obscurity of which suggests they may not be of the highest quality."
+    },
+    {
+        "id": 48,
+        "title": "Poetical Works of Sir Walter Scott, The",
+        "author": "scott",
+        "year_published": 1913,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "`Edited by J Logie Robertson'."
+    },
+    {
+        "id": 47,
+        "title": "Complete Works of William Shakespeare, The",
+        "author": "shakespeare",
+        "year_published": 1916,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "`Edited, with a glossary, by W J Craig'. &#182; Inscribed: `G M Rutherford 31st March 1918'."
+    },
+    {
+        "id": 86,
+        "title": "Bell's Shakspere, Volume 1",
+        "author": "shakespeare",
+        "year_published": 1788,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "`Prolegomena'. The spelling of Shakespeare's surname did not stabilise until the nineteenth century."
+    },
+    {
+        "id": 87,
+        "title": "Bell's Shakspere, Volume 2",
+        "author": "shakespeare",
+        "year_published": 1788,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "More `Prolegomena'."
+    },
+    {
+        "id": 88,
+        "title": "Bell's Shakspere, Volume 3",
+        "author": "shakespeare",
+        "year_published": 1788,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "Containing <em>The Tempest</em> and <em>Two Gentlemen of Verona</em>."
+    },
+    {
+        "id": 89,
+        "title": "Bell's Shakspere, Volume 4",
+        "author": "shakespeare",
+        "year_published": 1788,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "Containing <em>The Merry Wives of Windsor</em> and <em>Much Ado About Nothing</em>."
+    },
+    {
+        "id": 90,
+        "title": "Bell's Shakspere, Volume 5",
+        "author": "shakespeare",
+        "year_published": 1788,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "Containing <em>Measure for Measure</em> and <em>The Comedy of Errors</em>."
+    },
+    {
+        "id": 91,
+        "title": "Bell's Shakspere, Volume 6",
+        "author": "shakespeare",
+        "year_published": 1788,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "Containing <em>Love's Labour's Lost</em> and <em>A Midsummer Night's Dream</em>."
+    },
+    {
+        "id": 92,
+        "title": "Bell's Shakspere, Volume 7",
+        "author": "shakespeare",
+        "year_published": 1788,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "Containing <em>The Merchant of Venice</em> and <em>As You Like It</em>."
+    },
+    {
+        "id": 93,
+        "title": "Bell's Shakspere, Volume 8",
+        "author": "shakespeare",
+        "year_published": 1788,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "Containing <em>The Taming of the Shrew</em> and <em>All's Well That Ends Well</em>."
+    },
+    {
+        "id": 94,
+        "title": "Bell's Shakspere, Volume 9",
+        "author": "shakespeare",
+        "year_published": 1788,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "Containing <em>Twelfth Night</em> and <em>The Winter's Tale</em>."
+    },
+    {
+        "id": 95,
+        "title": "Bell's Shakspere, Volume 10",
+        "author": "shakespeare",
+        "year_published": 1788,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "Containing <em>Macbeth</em> and <em>King John</em>."
+    },
+    {
+        "id": 96,
+        "title": "Bell's Shakspere, Volume 11",
+        "author": "shakespeare",
+        "year_published": 1788,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "Containing <em>Richard II</em> and <em>Henry IV, Part 1</em>."
+    },
+    {
+        "id": 97,
+        "title": "Bell's Shakspere, Volume 12",
+        "author": "shakespeare",
+        "year_published": 1788,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "Containing <em>Henry IV, Part 2</em> and <em>Henry V</em>."
+    },
+    {
+        "id": 98,
+        "title": "Bell's Shakspere, Volume 13",
+        "author": "shakespeare",
+        "year_published": 1788,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "Containing <em>Henry VI, Part 1</em> and <em>Henry VI, Part 2</em>."
+    },
+    {
+        "id": 99,
+        "title": "Bell's Shakspere, Volume 14",
+        "author": "shakespeare",
+        "year_published": 1788,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "Containing <em>Henry VI, Part 3</em> and <em>Richard III</em>."
+    },
+    {
+        "id": 100,
+        "title": "Bell's Shakspere, Volume 15",
+        "author": "shakespeare",
+        "year_published": 1788,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "Containing <em>Henry VIII</em> and <em>Coriolanus</em>."
+    },
+    {
+        "id": 101,
+        "title": "Bell's Shakspere, Volume 16",
+        "author": "shakespeare",
+        "year_published": 1788,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "Containing <em>Julius Caesar</em> and <em>Anthony and Cleopatra</em>."
+    },
+    {
+        "id": 102,
+        "title": "Bell's Shakspere, Volume 17",
+        "author": "shakespeare",
+        "year_published": 1788,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "Containing <em>Timon of Athens</em> and <em>King Lear</em>."
+    },
+    {
+        "id": 103,
+        "title": "Bell's Shakspere, Volume 18",
+        "author": "shakespeare",
+        "year_published": 1788,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "Containing <em>Hamlet</em> and <em>Titus Andronicus</em>."
+    },
+    {
+        "id": 104,
+        "title": "Bell's Shakspere, Volume 19",
+        "author": "shakespeare",
+        "year_published": 1788,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "Containing <em>Troilus and Cressida</em> and <em>Othello</em>."
+    },
+    {
+        "id": 105,
+        "title": "Bell's Shakspere, Volume 20",
+        "author": "shakespeare",
+        "year_published": 1788,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "Containing <em>Cymbeline</em> and <em>Romeo and Juliet</em>."
+    },
+    {
+        "id": 46,
+        "title": "Complete Poetical Works of Percy Bysshe Shelley, The",
+        "author": "shelley",
+        "year_published": 1912,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "`Edited with textual notes by Thomas Hutchinson'."
+    },
+    {
+        "id": 55,
+        "title": "Poetical Works of Edmund Spenser, The",
+        "author": "spenser",
+        "year_published": 1916,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "`Edited with critical notes by J C Smith and E de Selincourt'. &#182; Inscribed: `To Rosie, With love and best wishes for Christmas and the New Year. Dec 25th 1923'."
+    },
+    {
+        "id": 54,
+        "title": "Poems by Robert Louis Stevenson",
+        "author": "stevenson",
+        "year_published": 1909,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 53,
+        "title": "Works of Alfred Lord Tennyson Poet Laureate, The",
+        "author": "tennyson",
+        "year_published": 1911,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "Inscribed: `Northgate Baptist GE Society, a small token of esteem and affection presented to Miss M Grimoldly by her Fellow Endeavourers on the occasion of her leaving Loath for Saffron Walden. July 1912. I Thessalonians V.16,17,18.'"
+    },
+    {
+        "id": 52,
+        "title": "Collected Poems and War Diary, 1917, The",
+        "author": "thomas",
+        "year_published": 2004,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 50,
+        "title": "Poetical Works of Edmund Waller and Sir John Denham, The",
+        "author": "waller",
+        "year_published": 1868,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "`Text edited with Charles Cowden Clarke'."
+    },
+    {
+        "id": 111,
+        "title": "Leaves of Grass",
+        "author": "whitman",
+        "year_published": 1882,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "Previously owned by one Robert B Sweet MD FACS."
+    },
+    {
+        "id": 49,
+        "title": "Poetical Works of William Wordsworth, Volume I, The",
+        "author": "wordsworth",
+        "year_published": 1849,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "`Edward Moxon, Dover Street'."
+    },
+    {
+        "id": 56,
+        "title": "Poetical Works of William Wordsworth, Volume II, The",
+        "author": "wordsworth",
+        "year_published": 1849,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 57,
+        "title": "Poetical Works of William Wordsworth, Volume III, The",
+        "author": "wordsworth",
+        "year_published": 1849,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 58,
+        "title": "Poetical Works of William Wordsworth, Volume IV, The",
+        "author": "wordsworth",
+        "year_published": 1849,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 59,
+        "title": "Poetical Works of William Wordsworth, Volume V, The",
+        "author": "wordsworth",
+        "year_published": 1849,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 60,
+        "title": "Poetical Works of William Wordsworth, Volume VII, The",
+        "author": "wordsworth",
+        "year_published": 1849,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 61,
+        "title": "Poetical Works of William Wordsworth, Volume VI, The",
+        "author": "wordsworth",
+        "year_published": 1849,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 62,
+        "title": "Prelude, The",
+        "author": "wordsworth",
+        "year_published": 1851,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "`Second Edition'. &#182; Inscribed: `Charles and Honora Thompson. March the 13th 1894.' &#182; This volume was rebound for me by Christine Cleaton."
+    },
+    {
+        "id": 63,
+        "title": "Holy Bible, Containing the Old and New Testaments: Translated out of the Original Tongues: and with the Former Translations Diligently Compared and Revised, by His Majesty's Special Command, The",
+        "author": null,
+        "year_published": 1868,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 64,
+        "title": "Hymns Ancient and Modern",
+        "author": null,
+        "year_published": 1900,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "The proximate date is a best guess. This volume was my mother's mother's before me, and her mother's before her."
+    },
+    {
+        "id": 65,
+        "title": "Book of Common Prayer, The",
+        "author": null,
+        "year_published": 1844,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 106,
+        "title": "Reliques of Ancient English Poetry, Volume I",
+        "author": null,
+        "year_published": 1775,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "`The Third Edition'. Once owned by William Hutchinson."
+    },
+    {
+        "id": 107,
+        "title": "Reliques of Ancient English Poetry, Volume II",
+        "author": null,
+        "year_published": 1775,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 108,
+        "title": "Reliques of Ancient English Poetry, Volume III",
+        "author": null,
+        "year_published": 1775,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 110,
+        "title": "Oxford Book of English Poetry 1250-1900, The",
+        "author": null,
+        "year_published": 1906,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "Previously owned by one Mervyn Lloyd Peel."
+    },
+    {
+        "id": 76,
+        "title": "Remarks on Several Parts of Italy",
+        "author": "addison",
+        "year_published": 1745,
+        "in_library": 1,
+        "genre": "poetry-related",
+        "notes": "This book is bound as the fourth volume of the <em>Miscellaneous Works</em> of 1746."
+    },
+    {
+        "id": 66,
+        "title": "Religio Medici, Hydriotaphia, and the Letter to a Friend",
+        "author": "browne",
+        "year_published": 1869,
+        "in_library": 1,
+        "genre": "poetry-related",
+        "notes": null
+    },
+    {
+        "id": 109,
+        "title": "Lives of the Most Famous English Poets, The",
+        "author": "winstanley",
+        "year_published": 1687,
+        "in_library": 1,
+        "genre": "poetry-related",
+        "notes": "This most ancient volume has passed through many hands, some of whom are recorded in the first few pages."
+    }
+]

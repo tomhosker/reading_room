@@ -1,0 +1,13 @@
+#!/bin/sh
+
+### This code is intended to run whenever `git commit` is called.
+### To install me, copy me into .git/hooks.
+
+# Crash on the first non-zero exit code.
+set -e
+
+# Let's get cracking...
+cd python
+. venv/bin/activate
+python3 refresh_catalogue_dump.py
+echo "Refreshed catalogue data dump."
