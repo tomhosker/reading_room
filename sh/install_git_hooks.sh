@@ -13,4 +13,5 @@ PATH_TO_DST="$PATH_TO_THIS_DIR/../.git/hooks"
 # Let's get cracking...
 for file_path in $PATH_TO_SRC/*; do
     cp $file_path $PATH_TO_DST
+    chmod a+x "$PATH_TO_DST/$(basename $file_path)"
 done
