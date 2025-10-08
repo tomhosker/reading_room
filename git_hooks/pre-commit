@@ -10,5 +10,6 @@ set -e
 cd python
 . venv/bin/activate
 python3 refresh_catalogue_dump.py
-git add ./_exports
+cd ..
+git add ./_exports/*
 echo "Refreshed catalogue data dump."
