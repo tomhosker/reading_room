@@ -126,6 +126,15 @@
         "notes": null
     },
     {
+        "id": 124,
+        "title": "Poetical Works of Matthew Arnold, The",
+        "author": "arnold",
+        "year_published": 1901,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
         "id": 10,
         "title": "Poems of Rural Life",
         "author": "barnes",
@@ -324,6 +333,15 @@
         "notes": null
     },
     {
+        "id": 139,
+        "title": "Complete Works of Charles Stuart Calverley, The",
+        "author": "calverley",
+        "year_published": 1901,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
         "id": 27,
         "title": "Poetical Works of Thomas Campbell, The",
         "author": "campbell",
@@ -331,6 +349,15 @@
         "in_library": 1,
         "genre": "poetry",
         "notes": "The proximate year of publication is an educated guess."
+    },
+    {
+        "id": 125,
+        "title": "Poems of Thomas Carew, The",
+        "author": "carew",
+        "year_published": 1899,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "`Edited by Arthur Vincent'."
     },
     {
         "id": 28,
@@ -342,6 +369,15 @@
         "notes": "`...with wood engravings by David Gentleman'."
     },
     {
+        "id": 138,
+        "title": "Poems of Hugh Arthur Clough",
+        "author": "clough",
+        "year_published": 1903,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "Inscribed: `GCD // from his mother // July 8th 1904'."
+    },
+    {
         "id": 29,
         "title": "Poetical Works of William Cowper, The",
         "author": "cowper",
@@ -349,6 +385,15 @@
         "in_library": 1,
         "genre": "poetry",
         "notes": "`With a preface by the Rev T S Grimshawe'. &#182; Inscribed: `Mary Anne Hamond. A birthday present from her cousin... Oct 12 1845.'"
+    },
+    {
+        "id": 126,
+        "title": "Poetical Works of George Crabbe, The",
+        "author": "crabbe",
+        "year_published": 1908,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "`Edited by A J Carlyle and RM Carlyle'."
     },
     {
         "id": 51,
@@ -415,7 +460,7 @@
     },
     {
         "id": 16,
-        "title": "Collected Poems 1905---1925",
+        "title": "Collected Poems 1905-1925",
         "author": "gibson",
         "year_published": 1926,
         "in_library": 0,
@@ -513,6 +558,24 @@
         "notes": null
     },
     {
+        "id": 127,
+        "title": "Poems of Oliver Goldsmith, The",
+        "author": "goldsmith",
+        "year_published": 1859,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "`Edited by Robert Aris Wilmott'."
+    },
+    {
+        "id": 128,
+        "title": "Poems of Adam Lindsay Gordon, The",
+        "author": "gordon",
+        "year_published": 1913,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "`Arranged by Douglas Sladen'."
+    },
+    {
         "id": 32,
         "title": "Gray's English Poems",
         "author": "gray",
@@ -529,6 +592,15 @@
         "in_library": 1,
         "genre": "poetry",
         "notes": "This edition is, allegedly, the very first complete Collected Poems of Hardy ever printed. &#182; Inscribed: `Douglas Feaver July 1939'."
+    },
+    {
+        "id": 129,
+        "title": "Works of George Herbert, The",
+        "author": "herbert",
+        "year_published": 1885,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "The proximate year of publication is an educated guess."
     },
     {
         "id": 119,
@@ -553,6 +625,15 @@
         "title": "Gerard Manley Hopkins, The Major Works",
         "author": "hopkins",
         "year_published": 2009,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 130,
+        "title": "Collected Poems of A E Housman",
+        "author": "housman",
+        "year_published": 2005,
         "in_library": 1,
         "genre": "poetry",
         "notes": null
@@ -603,6 +684,15 @@
         "notes": null
     },
     {
+        "id": 131,
+        "title": "Poetical Works of James Russell Lowell",
+        "author": "lowell",
+        "year_published": 1903,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "Inscribed: `To WAS from his friend JSB. December 27th 1921'."
+    },
+    {
         "id": 114,
         "title": "Poems of Digby Mackworth Dolben",
         "author": "mackworth",
@@ -621,6 +711,33 @@
         "notes": null
     },
     {
+        "id": 132,
+        "title": "Collected Poems",
+        "author": "mcgonagall",
+        "year_published": 2006,
+        "in_library": 0,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 134,
+        "title": "Poems by George Meredith, Volume I",
+        "author": "meredith",
+        "year_published": 1913,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
+        "id": 135,
+        "title": "Poems by George Meredith, Volume II",
+        "author": "meredith",
+        "year_published": 1913,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
         "id": 44,
         "title": "Poetical Works of John Milton, The",
         "author": "milton",
@@ -628,6 +745,15 @@
         "in_library": 1,
         "genre": "poetry",
         "notes": "The proximate date is an educated guess. This volume is part of the `Lansdowne Poets' series."
+    },
+    {
+        "id": 133,
+        "title": "Poems of Wilfred Owen, The",
+        "author": "owen",
+        "year_published": 1998,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": "`Edited by Jon Stallworthy'."
     },
     {
         "id": 41,
@@ -945,6 +1071,15 @@
         "notes": "Previously owned by one Robert B Sweet MD FACS."
     },
     {
+        "id": 136,
+        "title": "Poetical Works of John Greenleaf Whittier, The",
+        "author": "whittier",
+        "year_published": 1909,
+        "in_library": 1,
+        "genre": "poetry",
+        "notes": null
+    },
+    {
         "id": 49,
         "title": "Poetical Works of William Wordsworth, Volume I, The",
         "author": "wordsworth",
@@ -1015,6 +1150,15 @@
         "in_library": 1,
         "genre": "poetry",
         "notes": "`Second Edition'. &#182; Inscribed: `Charles and Honora Thompson. March the 13th 1894.' &#182; This volume was rebound for me by Christine Cleaton."
+    },
+    {
+        "id": 137,
+        "title": "Collected Poems",
+        "author": "yeats",
+        "year_published": 1985,
+        "in_library": 0,
+        "genre": "poetry",
+        "notes": null
     },
     {
         "id": 63,
