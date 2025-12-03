@@ -9,6 +9,15 @@
         "notes": "`An English version with an introduction by N K Sandars'."
     },
     {
+        "id": 140,
+        "title": "The Collected Poems",
+        "author": "cavafy",
+        "year_published": 2006,
+        "in_library": 0,
+        "genre": "greek",
+        "notes": "Translated by Evangelos Sachperoglou. Parallel Greek and English texts."
+    },
+    {
         "id": 3,
         "title": "Collected Poems of Nikos Kavadias, The",
         "author": "kavadias",
